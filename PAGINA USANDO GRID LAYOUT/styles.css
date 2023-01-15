@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;    /*SIEMPRE!!! TPMALO COMO REGLA PARA RWD*/
+}
+
+
+
+.container {
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   /* flex-wrap:wrap;
+    /*border: solid 3px;
+    border-color: black;*/
+}
+
+section {
+    width: 150px;
+    height: 30px;
+    border:  solid 1px;
+    border-color: black;
+}
+
+.container > section {
+    flex: 1 1 150px;
+}
+
+article > img {
+    width: 300px;
+    height: auto;
+    max-width: 100px;
+}
